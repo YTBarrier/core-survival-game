@@ -1,13 +1,19 @@
 {
+  "name": "survival-game",
+  "version": "0.0.1",
+  "description": "A 3D, realistic survival video game",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "wix dev"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  },
   "devDependencies": {
     "@wix/cli": "^1.0.0",
-    "@wix/eslint-plugin-cli": "^1.0.0",
-    "eslint": "^8.25.0",
-    "react": "16.14.0"
-  },
-  "scripts": {
-    "postinstall": "wix sync-types",
-    "dev": "wix dev",
-    "lint": "eslint ."
+    "vite": "^5.4.8"
   }
 }

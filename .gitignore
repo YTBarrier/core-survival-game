@@ -1,6 +1,6 @@
 # dependencies
-node_modules/
-.vscode/
-.idea/
-.wix/
+node_modules
+.vscode
+.idea
+.wix
 jsconfig.json
