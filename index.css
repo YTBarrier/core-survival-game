@@ -14,4 +14,12 @@
 
 #coords {
     position: absolute;
+    background-color: rgba(0, 0, 0, 40%);
+    padding: 5px;
+}
+
+.coord {
+    display: inline;
+    margin: 5px;
+    color: white;
 }
