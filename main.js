@@ -28,7 +28,9 @@ Utils.initializeMovement(movement);
 
 
 // objects to render
-scene.add(World.generateWorld());
+World.generatePlane(scene);
+World.generateTrees(scene);
+World.generateRocks(scene);
 
 
 camera.position.y = 6;
