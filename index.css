@@ -23,3 +23,16 @@
     margin: 5px;
     color: white;
 }
+
+#title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#desc {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+}
