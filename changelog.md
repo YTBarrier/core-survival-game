@@ -1,5 +1,7 @@
 # Changelog
 for CORE survival game
+## Version 0.2.0
+Trees and rocks are now rendered. There are 5 trees and three rocks. Collision detection is not active yet
 ## Version 0.1.0
 Forward and backward movement(NOT side-to-side) is now slightly faster. You also have the ability to sprint by holding down either SHIFT key. Sprinting only works for forward movement.
 ## Version 0.0.0
