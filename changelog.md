@@ -1,6 +1,6 @@
 # Changelog
 for CORE survival game
-## Version 0.2.1
+## Patch 0.2.1
 Added title to top of screen, and changed where Alpha Testing Phase text is.
 ## Version 0.2.0
 Trees and rocks are now rendered. There are 5 trees and three rocks. Collision detection is not active yet.
