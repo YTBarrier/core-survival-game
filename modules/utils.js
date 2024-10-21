@@ -15,6 +15,10 @@ function initializeMovement(movement) {
             case 'KeyD':
                 movement.right = true;
                 break;
+            case 'ShiftLeft':
+            case 'ShiftRight':
+                movement.sprint = true;
+                break;
         }
     });
     document.addEventListener('keyup', e => {
@@ -31,20 +35,33 @@ function initializeMovement(movement) {
             case 'KeyD':
                 movement.right = false;
                 break;
+            case 'ShiftLeft':
+            case 'ShiftRight':
+                movement.sprint = false;
+                break;
         }
     });
 }
 function movementCheck(movement, camera) {
     if(movement.forward) {
-        const movementDistance = 0.1;
-        const direction = new THREE.Vector3();
-        camera.getWorldDirection(direction);
-        const horizontalDirection = direction.clone().setY(0).normalize();
+        if(movement.sprint) {
+            const movementDistance = 0.30;
+            const direction = new THREE.Vector3();
+            camera.getWorldDirection(direction);
+            const horizontalDirection = direction.clone().setY(0).normalize();
 
-        camera.position.addScaledVector(horizontalDirection, movementDistance);
+            camera.position.addScaledVector(horizontalDirection, movementDistance);
+        } else {
+            const movementDistance = 0.15;
+            const direction = new THREE.Vector3();
+            camera.getWorldDirection(direction);
+            const horizontalDirection = direction.clone().setY(0).normalize();
+
+            camera.position.addScaledVector(horizontalDirection, movementDistance);
+        }
     }
     if(movement.backward) {
-        const movementDistance = -0.1;
+        const movementDistance = -0.15;
         const direction = new THREE.Vector3();
         camera.getWorldDirection(direction);
         const horizontalDirection = direction.clone().setY(0).normalize();

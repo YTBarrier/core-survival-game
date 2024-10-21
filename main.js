@@ -23,7 +23,7 @@ document.addEventListener('click', () => {
 });
 
 // movement controls
-let movement = { forward: false, backward: false, left: false, right: false };
+let movement = { forward: false, backward: false, left: false, right: false, sprint: false };
 Utils.initializeMovement(movement);
 
 
