@@ -1,5 +1,7 @@
 # Changelog
 for CORE survival game
+## Patch 0.2.2
+Tree trunks have only one possible radial segment amount(10), as opposed to all values between 5 and 16.
 ## Patch 0.2.1
 Added title to top of screen, and changed where Alpha Testing Phase text is.
 ## Version 0.2.0

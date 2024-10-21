@@ -12,7 +12,7 @@ function generatePlane(scene) {
 function generateTrees(scene) {
     for(let i = 0; i < 5; i++) {
         const trunk = new THREE.Mesh(
-            new THREE.CylinderGeometry(2, 2, 15, Math.floor(Math.random() * 11) + 5),
+            new THREE.CylinderGeometry(2, 2, 15, 10),
             new THREE.MeshBasicMaterial({ color: 0x725c42 })
         );
         const leaves = new THREE.Mesh(
