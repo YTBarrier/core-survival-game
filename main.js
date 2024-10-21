@@ -49,7 +49,6 @@ let coords = {
 }
 renderer.setAnimationLoop(function() {
     Utils.movementCheck(movement, camera);
-
     coords.update();
 
     renderer.render(scene, camera);

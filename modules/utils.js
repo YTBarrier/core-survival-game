@@ -1,7 +1,4 @@
 import * as THREE from 'three';
-function execWeatherCycle(clearColor) {
-
-}
 
 function initializeMovement(movement) {
     document.addEventListener('keydown', e => {
@@ -61,4 +58,4 @@ function movementCheck(movement, camera) {
         camera.translateX(0.1);
     }
 }
-export { execWeatherCycle, initializeMovement, movementCheck };
+export { initializeMovement, movementCheck };
