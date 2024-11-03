@@ -1,5 +1,7 @@
 # Changelog
 for CORE survival game
+## Patch 0.3.2
+Rocks now cast and recieve shadows. Additionally, shadows have much more clarity.
 ## Patch 0.3.1
 There is now a small amount of ambient light.
 ## Version 0.3.0

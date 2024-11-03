@@ -46,6 +46,8 @@ function generateRocks(scene) {
             new THREE.SphereGeometry(2, 10, 15, Math.floor(Math.random() * 11) + 5),
             new THREE.MeshPhongMaterial({ color: 0x708090 })
         );
+        rock.castShadow = true;
+        rock.receiveShadow = true;
 
         const boundary = {
             minX: -50,

@@ -35,6 +35,8 @@ World.generateRocks(scene);
 const light = new THREE.PointLight(0xffffff, 5, 0, 0);
 light.position.set(0, 100, 0);
 light.castShadow = true;
+light.shadow.mapSize.height = 5000;
+light.shadow.mapSize.width = 5000;
 scene.add(light);
 
 const helper = new THREE.CameraHelper( light.shadow.camera );
