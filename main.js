@@ -37,6 +37,11 @@ light.position.set(0, 100, 0);
 light.castShadow = true;
 scene.add(light);
 
+const helper = new THREE.CameraHelper( light.shadow.camera );
+scene.add(helper);
+
+const ambient = new THREE.AmbientLight(0xffffff, 0.15);
+scene.add(ambient);
 
 camera.position.y = 6;
 

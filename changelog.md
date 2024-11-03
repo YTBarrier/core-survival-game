@@ -1,5 +1,7 @@
 # Changelog
 for CORE survival game
+## Patch 0.3.1
+There is now a small amount of ambient light.
 ## Version 0.3.0
 There is a light source located at the middle of the world(100 feet high). The material type for the plane, trees, and the rocks has been updated from MeshBasicMaterial to MeshLambertMaterial, so that it shades relative to light. Shadows are also casted on all objects now.
 ## Patch 0.2.2
