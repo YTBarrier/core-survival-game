@@ -10,6 +10,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setClearColor(0x87ceeb, 1);
+renderer.shadowMap.enabled = true;
 document.body.appendChild(renderer.domElement);
 
 // camera controls setup
@@ -31,6 +32,10 @@ Utils.initializeMovement(movement);
 World.generatePlane(scene);
 World.generateTrees(scene);
 World.generateRocks(scene);
+const light = new THREE.PointLight(0xffffff, 5, 0, 0);
+light.position.set(0, 100, 0);
+light.castShadow = true;
+scene.add(light);
 
 
 camera.position.y = 6;

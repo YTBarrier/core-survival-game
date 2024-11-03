@@ -1,5 +1,7 @@
 # Changelog
 for CORE survival game
+## Version 0.3.0
+There is a light source located at the middle of the world(100 feet high). The material type for the plane, trees, and the rocks has been updated from MeshBasicMaterial to MeshLambertMaterial, so that it shades relative to light. Shadows are also casted on all objects now.
 ## Patch 0.2.2
 Tree trunks have only one possible radial segment amount(10), as opposed to all values between 5 and 16.
 ## Patch 0.2.1
