@@ -1,5 +1,7 @@
 # Changelog
 for CORE survival game
+## Patch 0.3.3
+Changed shadow map range.
 ## Patch 0.3.2
 Rocks now cast and recieve shadows. Additionally, shadows have much more clarity.
 ## Patch 0.3.1

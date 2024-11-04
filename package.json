@@ -1,6 +1,6 @@
 {
   "name": "survival-game",
-  "version": "0.3.0",
+  "version": "0.3.3",
   "description": "A 3D, realistic survival video game",
   "main": "index.js",
   "keywords": [],
