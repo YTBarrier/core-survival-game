@@ -1,12 +1,13 @@
 {
   "name": "survival-game",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "A 3D, realistic survival video game",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "scripts": {
+    "build": "vite build"
   },
   "dependencies": {
     "three": "^0.169.0"

@@ -1,5 +1,11 @@
 # Changelog
 for CORE survival game
+## Patch 0.3.4
+A build script has been added to the package:
+```bash
+npm run build
+```
+Additionally, dist has been added to the .gitignore file for the build.
 ## Patch 0.3.3
 Changed shadow map range.
 ## Patch 0.3.2
