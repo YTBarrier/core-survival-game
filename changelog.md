@@ -1,5 +1,7 @@
 # Changelog
 for CORE survival game
+## Version 0.4.0
+The sunlight type has been changed from PointLight to DirectionalLight, which requires the shadow map's left, right, top, and bottom properties to be changed to either 50 or -50(negative for left and bottom) to increase the rendering area of the shadows.
 ## Patch 0.3.4
 A build script has been added to the package:
 ```bash

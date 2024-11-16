@@ -33,9 +33,13 @@ World.generatePlane(scene);
 World.generateTrees(scene);
 World.generateRocks(scene);
 
-const light = new THREE.PointLight(0xffffff, 5, 0, 0);
-light.position.set(0, 100, 0);
+const light = new THREE.DirectionalLight(0xffffff, 2.5);
+light.position.set(0, 50, 0);
 light.castShadow = true;
+light.shadow.camera.left = -50;
+light.shadow.camera.right = 50;
+light.shadow.camera.top = 50;
+light.shadow.camera.bottom = -50;
 light.shadow.mapSize.height = 5000;
 light.shadow.mapSize.width = 5000;
 light.shadow.camera.far = 200;
