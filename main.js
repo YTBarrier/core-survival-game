@@ -1,7 +1,9 @@
 import * as THREE from 'three';
 import { PointerLockControls } from 'three/examples/jsm/Addons.js';
+
 import * as World from './modules/world.js';
 import * as Utils from './modules/utils.js';
+import * as UI from './modules/ui.js';
 
 // scene, camera, and renderer setup
 const scene = new THREE.Scene();
@@ -27,7 +29,6 @@ document.addEventListener('click', () => {
 let movement = { forward: false, backward: false, left: false, right: false, up: false, down: false, sprint: false };
 Utils.initializeMovement(movement);
 
-
 // objects to render
 World.generatePlane(scene);
 World.generateTrees(scene);
@@ -42,13 +43,15 @@ light.shadow.camera.top = 50;
 light.shadow.camera.bottom = -50;
 light.shadow.mapSize.height = 5000;
 light.shadow.mapSize.width = 5000;
-light.shadow.camera.far = 200;
+light.shadow.camera.far = 100;
 scene.add(light);
 const helper = new THREE.CameraHelper( light.shadow.camera );
 scene.add(helper);
 
 const ambient = new THREE.AmbientLight(0xffffff, 0.15);
 scene.add(ambient);
+
+UI.initHotbar();
 
 camera.position.y = 6;
 
