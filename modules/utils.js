@@ -45,14 +45,14 @@ function initializeMovement(movement) {
 function movementCheck(movement, camera) {
     if(movement.forward) {
         if(movement.sprint) {
-            const movementDistance = 0.30;
+            const movementDistance = 0.40;
             const direction = new THREE.Vector3();
             camera.getWorldDirection(direction);
             const horizontalDirection = direction.clone().setY(0).normalize();
 
             camera.position.addScaledVector(horizontalDirection, movementDistance);
         } else {
-            const movementDistance = 0.15;
+            const movementDistance = 0.20;
             const direction = new THREE.Vector3();
             camera.getWorldDirection(direction);
             const horizontalDirection = direction.clone().setY(0).normalize();
@@ -69,10 +69,10 @@ function movementCheck(movement, camera) {
         camera.position.addScaledVector(horizontalDirection, movementDistance);
     }
     if(movement.left) {
-        camera.translateX(-0.1);
+        camera.translateX(-0.15);
     }
     if(movement.right) {
-        camera.translateX(0.1);
+        camera.translateX(0.15);
     }
 }
 export { initializeMovement, movementCheck };
