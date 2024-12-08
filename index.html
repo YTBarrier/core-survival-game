@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="index.css"/>
-    <title>Survival Game</title>
-    <script src="main.js" type="module"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            font-size: 5vh;
+            font-family: sans-serif;
+            border: 2vh solid black;
+            margin: 0;
+        }
+    </style>
+    <title>Loading CORE...</title>
+    <script defer>
+        async function main() {
+            const response = await fetch('http://localhost:3000/menu');
+            const data = await response.json();
+            document.body.innerHTML = data.body;
+            setTimeout(() => document.head.innerHTML = data.head, 0);
+        }
+        document.addEventListener('DOMContentLoaded', main);
+    </script>
 </head>
-<body style="margin: 0; overflow: hidden;">
-    <h1 id="title">CORE</h1>
-    <p id="desc">Craft Outlast Raid Explore (alpha testing, game isn't very good yet)</p>
-    <div id="hotbar"><div class="slot"></div><div class="slot"></div></div>
-    <div id="coords">
-        <p id="x" class="coord">X: 0</p>
-        <p id="y" class="coord">Y: 0</p>
-        <p id="z" class="coord">Z: 0</p>
-    </div>
+<body>
+    <h1>Loading...</h1>
 </body>
 </html>
