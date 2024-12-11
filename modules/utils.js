@@ -45,7 +45,7 @@ function initializeMovement(movement) {
 function movementCheck(movement, camera) {
     if(movement.forward) {
         if(movement.sprint) {
-            const movementDistance = 0.40;
+            const movementDistance = 0.30;
             const direction = new THREE.Vector3();
             camera.getWorldDirection(direction);
             const horizontalDirection = direction.clone().setY(0).normalize();

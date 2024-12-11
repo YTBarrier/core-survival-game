@@ -41,11 +41,11 @@ light.shadow.camera.left = -50;
 light.shadow.camera.right = 50;
 light.shadow.camera.top = 50;
 light.shadow.camera.bottom = -50;
-light.shadow.mapSize.height = 5000;
-light.shadow.mapSize.width = 5000;
+light.shadow.mapSize.height = 4096;
+light.shadow.mapSize.width = 4096;
 light.shadow.camera.far = 100;
 scene.add(light);
-const helper = new THREE.CameraHelper( light.shadow.camera );
+const helper = new THREE.CameraHelper(light.shadow.camera);
 scene.add(helper);
 
 const ambient = new THREE.AmbientLight(0xffffff, 0.15);
@@ -69,7 +69,7 @@ let coords = {
         document.getElementById('z').innerHTML = `Z: ${coords.z}`;
     },
 }
-renderer.setAnimationLoop(function() {
+renderer.setAnimationLoop(() => {
     Utils.movementCheck(movement, camera);
     coords.update();
 
